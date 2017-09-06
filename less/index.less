@@ -1,0 +1,251 @@
+@mainColor:#ccc;
+
+
+#header{
+   
+    .header-top{
+        height: 40px;
+        width: 100%;
+        border-bottom: 2px solid @mainColor;
+        >div{
+            line-height: 40px;
+            text-align: center;
+            border-left: 1px solid @mainColor;
+            >a{
+                color: #666;
+                text-decoration: none;
+                font-size: 14px;
+              
+            }
+            >.btn-default{
+                color: white;
+            }
+            &:first-of-type{
+                border-left: 0px;
+                position: relative;
+                >img{
+                    display: none;
+                    position: absolute; 
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top:40px;
+                  
+                }
+                  &:hover{
+                      >img{
+                           display: block;
+                           z-index: 999;
+                      }
+                     
+                }
+            }
+        }
+    }
+    .header-bo{
+        .container{
+            overflow: hidden;
+            .navbar-default{
+                background-color: white;
+                border: 0;
+               margin-bottom: 3px;
+                .navbar-header{
+                    .navbar-brand{
+                        >i::before{
+                            line-height: 50px;
+                            height: 80px;
+                            font-size: 30px;
+                        }
+                    }
+                }
+                .navbar-collapse{
+                    >ul{
+                       >li{
+                           >a{
+                                   line-height: 50px;
+                                   height: 80px;
+                                 &:hover{
+                                    background-color: white;
+                                    border-bottom: 3px solid red;
+                                   }
+                             }
+                      
+                       
+                        &.active{
+                            >a{ 
+                                background-color: white;
+                                border-bottom: 3px solid red;
+                            }
+                            
+                        }
+                       
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+#lunbo{
+    
+    .pcImg{
+        height: 410px;
+        display: block;
+        background-position: center center;
+    }
+    .mobileImg{
+        width: 100%;
+    }
+}
+#zhifu{
+    .container{
+       >div{
+           padding: 30px 0;
+            .media{
+            .media-left{
+                >i::before{
+                    font-size: 30px;
+                }
+            }
+           >a{
+                color: #666;
+                text-decoration: none;
+               
+                &:hover{
+                    color: red;
+                }
+           }
+            .media-body{
+                >p{
+                    margin: 0;
+                    font-size: 16px;
+                    line-height: 28px;
+                }
+            }
+        }
+      }
+    }
+}
+
+#yuyue{
+    border-top: 1px solid @mainColor;
+    border-bottom: 1px solid @mainColor;
+    .container{
+       >p{
+           font-size: 14px;
+           height: 40px;
+           line-height: 40px;
+       }
+    }
+}
+
+#tuijian{
+    background-color: #ccc;
+    .container{
+        .nav-tabs{
+            border-bottom: 1px solid #999;
+            >li{
+                >a{
+                    text-decoration: none;
+                    color: black;
+                    border: 0;
+                    font-size: 18px;
+                    background-color: #ccc;
+                }
+                &.active{
+                    border-bottom: 2px solid red;
+                }
+            }
+        }
+    }
+    .tab-content{
+        .tab-pane{
+            .row{
+                .newhand{
+                    background-color: white;
+                    margin:20px;
+                    position: relative;
+                    color: black;
+                    &.active{
+                        background-color: red;
+                        color: white;
+                        &::before{
+                            content: "\e915";
+                            font-family: 'itcast';
+                            font-size: 30px;
+                            position: absolute;
+                            left: 0;
+                            top: -6px;
+                        }
+                    }
+                }
+                .tiyan{
+                    padding-right: 120px;
+                   
+                    >h4{
+                        text-align: center;
+                        margin:0;
+                        padding: 20px 0px 10px 10px;
+                        font-size: 18px;
+                    }
+                    .row{
+                       padding:12px 12px;
+                        .qibu{
+                            margin-top: 12px;
+                            >p{
+                                margin: 0px;
+                            }
+                        }
+                    }
+                    .lilv{
+                        border-left: 2px dashed #ccc;
+                        position: absolute;
+                        right: 0;
+                        top:0;
+                        width: 120px;
+                        height: 100%;
+                        text-align: center;
+                       padding-top: 40px;
+                        >p:first-of-type{
+                            >strong{
+                                font-size: 22px;
+
+                            }
+                        }
+                        &::before,&::after{
+                             content:"";
+                             display: block;
+                             background-color: @mainColor;
+                             width: 12px;
+                             height: 12px;
+                             border-radius: 50%;
+                             position: absolute;
+                                 
+                        }
+                        &::before{
+                                top:-6px;
+                                transform: translateX(-50%);
+                                box-shadow: 1px 1px 1px #666;
+                        }
+                        &::after{
+                                bottom:-6px;
+                                transform: translateX(-50%);
+                                box-shadow: -1px -1px 1px #666;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+#allnews{
+   .container{
+       >div:first-of-type{
+         >h4{
+             margin-top: 30px;
+             font-size: 18px;
+             line-height: 30px;
+             border-bottom: 1px dashed gray;
+         }
+       }
+   } 
+}
